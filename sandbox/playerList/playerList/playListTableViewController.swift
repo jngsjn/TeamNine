@@ -11,7 +11,7 @@ import UIKit
 
 class playListTableViewController: UITableViewController {
 
-    let data:[String] = ["apple", "banana", "grapes"]
+    let data:[String] = ["🍎apple", "🍌banana", "🍇grapes", "🍉watermelon", "🍓strawberry"]
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -24,7 +24,7 @@ class playListTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 3
+        return data.count
     }
 
     
@@ -37,11 +37,12 @@ class playListTableViewController: UITableViewController {
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if let vc = segue.destination as? DetailViewController {
-//            guard let cell = sender as? UITableViewCell else { return }
-//            if let index = tableView.indexPath(for: cell){
-//                vc.data = data[index.row]
-//            }
-//        }
+        if let vc = segue.destination as? DetailViewController {
+            guard let cell = sender as? UITableViewCell else { return }
+            if let index = tableView.indexPath(for: cell){
+                vc.data = data[index.row]
+                vc.title = "Delicious"
+            }
+        }
     }
 }

@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Play List Table View Controller-->
+        <!--🍽-->
         <scene sceneID="yXx-Bi-9zT">
             <objects>
                 <tableViewController id="3c9-n4-GFq" customClass="playListTableViewController" customModule="playerList" customModuleProvider="target" sceneMemberID="viewController">
@@ -43,7 +43,7 @@
                             <outlet property="delegate" destination="3c9-n4-GFq" id="pRj-1b-C1g"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="ZNX-Ry-1V4"/>
+                    <navigationItem key="navigationItem" title="🍽" id="ZNX-Ry-1V4"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KzO-dT-jyn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
